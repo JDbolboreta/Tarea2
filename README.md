@@ -1,0 +1,24 @@
+# Tarea2
+Debes crear un componente visual para una web corporativa que muestre un contenido destacado (por ejemplo, una iniciativa, un servicio o una información importante de la empresa).
+Este componente debe funcionar por sí solo, sin depender de otros elementos de la página, y debe verse bien en móvil, tablet y ordenador.
+El componente debe mostrar:
+Una imagen representativa.
+Un título claro.
+Un texto breve que explique el contenido.
+Un pequeño bloque de información adicional (por ejemplo, tipo, estado o categoría).
+Un botón principal para realizar una acción.
+Un enlace secundario para ampliar información.
+Requisitos técnicos
+El componente debe estar envuelto en un article.
+Debes usar header, section y footer solo cuando tenga sentido para el contenido.
+El HTML debe tener sentido aunque no tenga estilos CSS.
+El CSS debe estar escrito siguiendo la metodología BEM.
+El diseño debe empezar por móvil y después adaptarse a tablet y desktop.
+Los botones y enlaces deben tener estados visibles de hover y focus.
+El contraste entre texto y fondo debe ser suficiente para que se lea bien (mínimo 4.5:1).
+No está permitido usar !important en el CSS.
+Entrega
+Debes entregar el código en un repositorio y tener la página funcionando desde un .html donde se vea correctamente en:
+Móvil
+Tablet
+Desktop
