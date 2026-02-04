@@ -1,153 +1,45 @@
-<!-- 
-  Debes crear un componente visual para una web corporativa que muestre un contenido destacado (por ejemplo, una iniciativa, un servicio o una información importante de la empresa).
-
-  Este componente debe funcionar por sí solo, sin depender de otros elementos de la página, y debe verse bien en móvil, tablet y ordenador.
-
-  El componente debe mostrar:
-
-  Una imagen representativa.
-  Un título claro.
-  Un texto breve que explique el contenido.
-  Un pequeño bloque de información adicional (por ejemplo, tipo, estado o categoría).
-  Un botón principal para realizar una acción.
-  Un enlace secundario para ampliar información.
-  Requisitos técnicos
-  El componente debe estar envuelto en un article.
-  Debes usar header, section y footer solo cuando tenga sentido para el contenido.
-  El HTML debe tener sentido aunque no tenga estilos CSS.
-  El CSS debe estar escrito siguiendo la metodología BEM.
-  El diseño debe empezar por móvil y después adaptarse a tablet y desktop.
-  Los botones y enlaces deben tener estados visibles de hover y focus.
-  El contraste entre texto y fondo debe ser suficiente para que se lea bien (mínimo 4.5:1).
-  No está permitido usar !important en el CSS.
-  Entrega
-  Debes entregar el código en un repositorio y tener la página funcionando desde un .html donde se vea correctamente en:
-
-  Móvil
-  Tablet
-  Desktop
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tarea 2</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-  <body>
-    <article class="card">
-      <header class="card__media">
-        <img class="card__img" src="camisa-roja.jpg" alt="Camiseta Roja" />
-        <span class="card__discountBadge">30% OFF</span>
-        <span class="card__categoryBadge">Ropa</span>
-      </header>
+<body>
+  <article class="card">
+    <header class="card__header">
+      <img
+        src="bolboreta.webp"
+        alt="bolboreta"
+        class="card__image"
+      />
+      <h2 class="card__title">
+        Servicio de Consultoría Digital
+      </h2>
+    </header>
+    <div>
       <section class="card__content">
-        <h3 class="card__title">Camiseta Roja</h3>
-        <p class="card__text">Una camiseta roja de la colección de primavera.</p>
+        <p class="card__description">
+          Ayudamos a las empresas a optimizar sus procesos y mejorar su presencia
+          digital mediante soluciones tecnológicas adaptadas a sus necesidades.
+        </p>
+        <div class="card__meta"> 
+          <span class="card__meta--label">Estado:</span>
+          Disponible
+          <span class="card__meta--label">Categoría:</span>
+          Servicios
+        </div>
       </section>
-      <footer class="card__info">
-        <p class="card__price">
-          <span class="card__price--old">$50.00</span>
-          <span class="card__price--new">$35.00</span>
-        </p>
-        <p class="card__reseña">4/5 (100 reseñas)</p>
-        <button class="card__btn card__btn--red">Comprar</button>
+      <footer class="card__footer">
+        <a href="#" class="card__button">
+          Solicitar información
+        </a>
+        <a href="#" class="card__link">
+          Ver más detalles
+        </a>
       </footer>
-    </article>
-    <article class="card">
-      <header class="card__media">
-        <img class="card__img card__image--contain" src="martillo.webp" alt="Martillo" />
-        <span class="card__discountBadge">30% OFF</span>
-        <span class="card__categoryBadge">Herramientas</span>
-      </header>
-      <section class="card__content">
-        <h3 class="card__title">Martillo</h3>
-        <p class="card__text">Un martillo resistente para todo tipo de trabajos.</p>
-      </section>
-      <footer class="card__info">
-        <p class="card__price">
-          <span class="card__price--old">$40.00</span>
-          <span class="card__price--new">$25.00</span>
-        </p>
-        <p class="card__reseña">3,8/5 (123 reseñas)</p>
-        <button class="card__btn card__btn--red">Comprar</button>
-      </footer>
-    </article>
-    <article class="card">
-      <header class="card__media">
-        <img class="card__img" src="flotador.webp" alt="Flotador" />
-        <span class="card__discountBadge">50% OFF</span>
-        <span class="card__categoryBadge">Piscina</span>
-      </header>
-      <section class="card__content">
-        <h3 class="card__title">Flotador</h3>
-        <p class="card__text">Un flotador para la piscina, ideal para el verano.</p>
-      </section>
-      <footer class="card__info">
-        <p class="card__price">
-          <span class="card__price--old">$20.00</span>
-          <span class="card__price--new">$10.00</span>
-        </p>
-        <p class="card__reseña">4,6/5 (322 reseñas)</p>
-        <button class="card__btn card__btn--red">Comprar</button>
-      </footer>
-    </article>
-    <article class="card">
-      <header class="card__media">
-        <img class="card__img" src="platanos.webp" alt="Plátanos" />
-        <span class="card__categoryBadge">Frutas</span>
-      </header>
-      <section class="card__content">
-        <h3 class="card__title">Plátanos</h3>
-        <p class="card__text">Un racimo de plátanos frescos y deliciosos.</p>
-      </section>
-      <footer class="card__info">
-        <p class="card__price">
-          <span class="card__price--new">$15.00</span>
-        </p>
-        <p class="card__reseña">4,9/5 (1200 reseñas)</p>
-        <button class="card__btn card__btn--red">Comprar</button>
-      </footer>
-    </article>
-    <article class="card">
-      <header class="card__media">
-        <img class="card__img" src="pelota-de-baloncesto.webp" alt="Pelota de Baloncesto" />
-        <span class="card__discountBadge">30% OFF</span>
-        <span class="card__categoryBadge">Deportes</span>
-      </header>
-      <section class="card__content">
-        <h3 class="card__title">Pelota de Baloncesto</h3>
-        <p class="card__text">Una pelota de baloncesto de alta calidad.</p>
-      </section>
-      <footer class="card__info">
-        <p class="card__price">
-          <span class="card__price--old">$50.00</span>
-          <span class="card__price--new">$35.00</span>
-        </p>
-        <p class="card__reseña">4,5/5 (200 reseñas)</p>
-        <button class="card__btn card__btn--red">Comprar</button>
-      </footer>
-    </article>
-    <article class="card">
-      <header class="card__media">
-        <img class="card__img" src="ibiza.webp" alt="Seat Ibiza" />
-        <span class="card__categoryBadge">Coches</span>
-      </header>
-      <section class="card__content">
-        <h3 class="card__title">Seat Ibiza</h3>
-        <p class="card__text">Un coche compacto y eficiente, ideal para la ciudad.</p>
-      </section>
-      <footer class="card__info">
-        <p class="card__price">
-          <span class="card__price--new">$11000.00</span>
-        </p>
-        <p class="card__reseña">
-          4,7/5 (20 reseñas)
-        </p>
-        <button class="card__btn card__btn--red">Comprar</button>
-      </footer>
-    </article>
-  </body>
+    </div>
+  </article>
+</body>
 </html>
